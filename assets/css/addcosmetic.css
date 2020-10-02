@@ -1,0 +1,311 @@
+@import "main.css";
+
+.container{
+    min-height: 100vh;
+}
+
+.nav{
+    height: 10vh;
+    padding: 0 2%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: steelblue;
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    height: 80%;
+    border-radius: 100%;
+}
+
+.buttons{
+    width: 53%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+.search > button, .search > input{
+    background-color: transparent;
+    border: none;
+    padding: 0 2%;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 18px;
+}
+
+.search > button{
+    cursor: pointer;
+}
+
+.home-button{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons > a, #home-button{
+    padding: 0 8px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.2s color;
+    border-bottom: 2px solid transparent;
+}
+
+.buttons > a:hover, #home-button:hover{
+    color: black
+}
+
+.content{
+    width: 100%;
+    height: 130vh;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addbook{
+    width: 70%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.title{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.logo{
+    height: 80%;
+    border-radius: 100%;
+}
+
+.subtitle{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 20px;
+}
+
+.addbook-form-outer{
+    height: 70%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 8%;
+}
+
+.addbook-form{
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-inputs{
+    height: 65%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.form-component{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addbook-button{
+    width: 100%;
+    padding: 1.5%;
+    box-sizing: border-box;
+    border: 1px solid steelblue;
+    background-color: steelblue;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s background, 0.2s color;
+}
+
+.addbook-button:hover{
+    background-color: #2e6592;
+    color: white;
+}
+
+.form-component > input, .form-component > select, .form-component > textarea{
+    border: none;
+    border-bottom: 1px solid #424242;
+    outline: none;
+    padding: 2%;
+    box-sizing: border-box;
+    width: 70%;
+    background-color: transparent;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.form-component > label{
+    padding: 2%;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+#cover-input{
+    border: none;
+}
+
+#cover-input::-webkit-file-upload-button{
+    border: none;
+    font-family: 'glacial_indiff';
+    background-color: white;
+    padding: 2%;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.2s background;
+}
+
+#cover-input::-webkit-file-upload-button:hover{
+    background-color: #ececec;
+}
+
+.checkboxes{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-label{
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+#sell-check, #rent-check{
+    display: none
+}
+
+.checkmark{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid transparent;
+    transition: 0.2s background, 0.2s border;
+}
+
+.check-label:hover .checkmark{
+    background-color: #d3d3d3;
+}
+
+.check-label > input:checked ~ .checkmark{
+    background-color: #00e676;
+    border: 1px solid #00b248;
+}
+
+/*DROPDOWN*/
+.topnav {
+    overflow: hidden;
+    float: right;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0 2vh;
+    height: 100%;
+    text-decoration: none;
+    font-size: 2.063983488132095vh;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 1605px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 1605px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      
+      display: block;
+      text-align: left;
+    }
+
+    .search
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width:950px)
+{
+    .addbook
+    {
+        width: 100%;
+    }
+}

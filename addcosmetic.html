@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/addcosmetic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assets/js/addcosmetic.js" defer></script>
+    <title>Sell Cosmetic</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="home-button">
+                <a href="./home.html" id="home-button"><img src="./assets/images/LOGO.png" alt="" class="logo"></a>
+            </div>
+            <div class="buttons">
+                <div class="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="search" name="" id="search" placeholder="">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="addbook">
+                <div class="form">
+                    <div class="title">
+                        <img src="./assets/images/LOGO.png" alt="" class="logo">
+                    </div>
+                    <div class="subtitle">Sell Your Own Cosmetics</div>
+                    <div class="addbook-form-outer">
+                        <div class="addbook-form">
+                            <div class="form-inputs">
+                                <div class="form-component">
+                                    <label for="">Item Name</label>
+                                </div>
+                                <div class="form-component">
+                                    <input type="text" name="" id="title">
+                                </div>
+
+                                <div class="form-component">
+                                    <label for="">Price</label>
+                                </div>
+                                <div class="form-component">
+                                    <input type="text" name="" id="price">
+                                </div>
+
+                                <div class="form-component">
+                                    <label for="">Category</label>
+                                </div>
+                                <div class="form-component">
+                                    <select name="" id="category">
+                                        <option value="">Body Lotion</option>
+                                        <option value="">Face Lotion</option>
+                                        <option value="">Bottle</option>
+                                        <option value="">Lipstick</option>
+                                        <option value="">Makeup</option>
+                                        <option value="">Perfume</option>
+                                        <option value="">Nails</option>
+                                        <option value="">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-component">
+                                    <label for="">Stock</label>
+                                </div>
+                                <div class="form-component">
+                                    <input type="number" name="" id="stock" >
+                                </div>
+
+                                <div class="form-component">
+                                    <label for="">Description</label>
+                                </div>
+                                <div class="form-component">
+                                    <textarea name="" id="description" rows="5"></textarea>
+                                </div>
+                                
+                                <div class="form-component">
+                                    <label for="">Cover</label>
+                                </div>
+                                <div class="form-component">
+                                    <input type="file" name="" id="cover-input">
+                                </div>
+
+                            </div>
+                            <div class="form-component">
+                                <div class="checkboxes">
+                                    <label class="check-label" for="sell-check" id="sell-check-label">
+                                        <input type="checkbox" name="" id="sell-check">
+                                        <span class="checkmark"></span>
+                                        Sell this cosmetic
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-component">
+                                <button type="submit" class="addbook-button" onclick="validateAddBook()">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

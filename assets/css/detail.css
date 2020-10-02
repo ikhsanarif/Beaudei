@@ -1,0 +1,206 @@
+@import "main.css";
+
+.container{
+    min-height: 100vh;
+}
+
+.nav{
+    height: 10vh;
+    padding: 0 2%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: steelblue;
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    height: 80%;
+    border-radius: 100%;
+}
+
+.buttons{
+    width: 36%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+.search > button, .search > input{
+    background-color: transparent;
+    border: none;
+    padding: 0 2%;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 18px;
+}
+
+.search > button{
+    cursor: pointer;
+}
+
+.home-button{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons > a, #home-button{
+    padding: 0 8px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.2s color;
+    border-bottom: 2px solid transparent;
+}
+
+.buttons > a:hover, #home-button:hover{
+    color: black
+}
+
+.content{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image, .info{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cosmetic-info{
+    width: 90%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    /* background-color: blanchedalmond; */
+}
+
+.info-detail{
+    text-align: justify;
+}
+
+.cosmetic-buttons-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cosmetic-buttons{
+    width: 40%;
+    padding: 1.5%;
+    box-sizing: border-box;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.2s background;
+}
+
+#rent-button{
+    background-color: #cfd8dc;
+}
+
+#rent-button:hover{
+    background-color: #b2babd;
+}
+
+#buy-button{
+    background-color: steelblue;
+    transition: 0.2s;
+}
+
+#buy-button:hover{
+    background-color: #2e6592;
+    color: white;
+}
+
+/*DROPDOWN*/
+.topnav {
+    overflow: hidden;
+    float: right;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0 2vh;
+    height: 100%;
+    text-decoration: none;
+    font-size: 2.063983488132095vh;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 1550px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 1550px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      
+      display: block;
+      text-align: left;
+    }
+
+    .search
+    {
+        display: none;
+    }
+}
